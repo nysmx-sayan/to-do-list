@@ -1,0 +1,141 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  width: 100%;
+  height: 400px;
+}
+.container {
+  overflow: hidden;
+  background-color: rgb(59, 59, 59);
+  width: 90%;
+  height: 90%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2% 0;
+}
+.top {
+  flex: 1;
+  color: white;
+  font-size: 1.7rem;
+}
+.middle {
+  flex: 1;
+}
+.bottom {
+  flex: 4;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.input-container {
+  display: flex;
+  color: white;
+  background-color: rgb(80, 80, 80);
+  padding: 10px;
+  width: 80%;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+}
+.input {
+  flex: 1;
+}
+.input input[type="text"] {
+  width: 90%;
+  border-radius: 5px;
+  border: 2px orange solid;
+  outline: none;
+  height: 20px;
+}
+
+.add-todo {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.todo-btn {
+  background-color: rgb(255, 145, 0);
+  width: 80px;
+  border-radius: 10px;
+  height: 50%;
+  font-size: 14px;
+  user-select: none;
+  transition: 0.1s;
+}
+.todo-btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.todo-btn:active {
+  background-color: rgb(255, 119, 0);
+  transform: scale(0.9);
+}
+.task-container {
+  background-color: rgb(55, 55, 55);
+  width: 80%;
+  height: 180px;
+  overflow-y: auto;
+}
+.task-container::-webkit-scrollbar {
+  display: none;
+}
+.task {
+  display: flex;
+  height: 25%;
+  background-color: rgb(87, 87, 87);
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+.task-detail {
+  flex: 1;
+}
+.task-number {
+  color: rgb(255, 119, 0);
+  font-size: 24px;
+  font-weight: 600;
+}
+.task-description {
+  color: white;
+}
+.task-action {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+}
+.complete-btn {
+  background-color: rgb(248, 247, 246);
+  width: 80px;
+  border-radius: 10px;
+  height: 50%;
+  font-size: 14px;
+  user-select: none;
+  color: green;
+  border: 2px rgb(0, 255, 30) solid;
+}
+.delete-btn {
+  background-color: rgb(252, 250, 247);
+  width: 80px;
+  border-radius: 10px;
+  height: 50%;
+  font-size: 14px;
+  user-select: none;
+  color: red;
+  border: 2px rgb(255, 25, 0) solid;
+  
+}
+.complete-btn:hover{
+    cursor: pointer;
+}
+.delete-btn:hover{
+    cursor: pointer;
+}

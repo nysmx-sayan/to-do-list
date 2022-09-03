@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+</head>
+<body>
+    <div class="main center">
+        <div class="container">
+            <div class="top center">My Todos</div>
+            <div class="middle center">
+          <div class="input-container">
+              <div class="input">
+                  <div class="input-lable">Name</div>
+                  <div class="input-box">
+                      <input type="text" id="name" />
+                    </div>
+                </div>
+                <div class="input">
+                    <div class="input-lable">Description</div>
+                    <div class="input-box">
+                        <input type="text" id="desc" />
+                    </div>
+                </div>
+                <div class="add-todo">
+                    <div class="todo-btn center" onclick="addtask()">Add Todo</div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="task-container" id="task-container"></div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="./index.js"></script>
+</html>
